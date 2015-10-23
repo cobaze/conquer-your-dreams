@@ -14,19 +14,63 @@ div.container-fluid{
 	height: 69em;
 
 	img{
-		width: 50em;
-		max-width: 100%;
 		margin: 0 auto;
 		display: block;
 		margin-top: 5%;
+		width: 45em;
+		max-width: 100%;
 	}
+}
+
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 740px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+	div.container-fluid{
+	background-image: url(../imgs/photo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 45em;
+
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-top: 20%;
+		}
+	}
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  	div.container-fluid{
+	background-image: url(../imgs/photo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 30em;
+
+		img{
+			margin: 0 auto;
+			display: block;
+			margin-top: 2%;
+			width: 30em;
+			max-height: 1000%;
+		}
+	}
+
 }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+/*@media (min-width: @screen-sm-min) {
 
 	div.container-fluid{
 	background-image: url(../imgs/photo1.jpg);
@@ -43,12 +87,12 @@ div.container-fluid{
 		}
 	}
 
-}
+}*/
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+/* Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) { ... }*/
 
-/* Large devices (large desktops, 1200px and up) */
+/* Large devices (large desktops, 1200px and up)
 @media (min-width: @screen-lg-min) { ... }
 
 @media (max-width: @screen-xs-max) { ... }
@@ -57,4 +101,4 @@ div.container-fluid{
 
 @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
 
-@media (min-width: @screen-lg-min) { ... }
+@media (min-width: @screen-lg-min) { ... }*/
