@@ -1,0 +1,60 @@
+/*-----------------------------------------------------------------------------
+Prototype Style Sheet (empty commented stylesheet)
+
+version:   1.0
+author:    Chuck Obaze
+email:     obazechuck@gmail.com
+website:   http://conqueryourdreams.org
+-----------------------------------------------------------------------------*/
+
+div.container-fluid{
+	background-image: url(../imgs/photo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 69em;
+
+	img{
+		width: 50em;
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+		margin-top: 5%;
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+	div.container-fluid{
+	background-image: url(../imgs/photo1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 69em;
+
+		img{
+			width: 50em;
+			max-width: 100%;
+			margin: 0 auto;
+			display: block;
+			margin-top: 5%;
+		}
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+@media (max-width: @screen-xs-max) { ... }
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+
+@media (min-width: @screen-lg-min) { ... }
